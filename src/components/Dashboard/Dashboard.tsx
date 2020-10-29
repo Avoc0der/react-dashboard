@@ -2,6 +2,7 @@ import React from 'react'
 
 // Components
 import Brand from '../Brand/Brand'
+import Chart from '../Chart/Chart'
 // Styled
 import GlobalStyle from '../GlobalStyle/GlobalStyle'
 import Container from '../Container/Container'
@@ -13,7 +14,7 @@ const Dashboard = (): JSX.Element => {
             <GlobalStyle />
             <Container>
                 <Brand />
-                <Card height={400}>Charts goes here</Card>
+                <Chart />
                 <Card height={400}>Table goes here</Card>
             </Container>
         </>
