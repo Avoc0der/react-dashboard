@@ -1,10 +1,12 @@
 import React from 'react'
-import './App.scss'
+
+// Components
+import Dashboard from '../Dashboard/Dashboard'
 
 const App: React.FC = (): JSX.Element => {
     return (
-        <div className="App">
-            <h1>Hello React!</h1>
+        <div>
+            <Dashboard />
         </div>
     )
 }

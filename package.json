@@ -12,6 +12,7 @@
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-scripts": "3.4.3",
+        "styled-components": "^5.2.0",
         "typescript": "~3.7.2"
     },
     "scripts": {
@@ -40,6 +41,7 @@
     "devDependencies": {
         "@types/react": "^16.9.46",
         "@types/react-dom": "^16.9.8",
+        "@types/styled-components": "^5.1.4",
         "eslint-config-airbnb-typescript-prettier": "^3.1.0",
         "prettier": "^2.1.0",
         "stylelint": "^13.7.0",
