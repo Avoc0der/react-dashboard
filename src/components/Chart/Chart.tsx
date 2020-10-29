@@ -9,17 +9,34 @@ const options = {
     chart: {
         height: '360px',
         type: 'column',
+        style: {
+            fontFamily: `'Blinker', sans-serif`,
+        },
     },
     title: {
-        text: 'Stacked column chart',
+        text: 'Revenue by Product',
     },
     xAxis: {
-        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas'],
+        categories: [
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'Jun',
+            'Jul',
+            'Aug',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dec',
+        ],
     },
     yAxis: {
         min: 0,
+        reversedStacks: false,
         title: {
-            text: 'Total fruit consumption',
+            text: 'Billions of Dollars',
         },
     },
     tooltip: {
@@ -28,22 +45,33 @@ const options = {
         shared: true,
     },
     plotOptions: {
+        series: {
+            borderWidth: 0,
+        },
         column: {
             stacking: 'percent',
         },
     },
     series: [
         {
-            name: 'John',
+            name: 'Phones',
             data: [5, 3, 4, 7, 2],
+            color: '#149947',
         },
         {
-            name: 'Jane',
+            name: 'Services',
             data: [2, 2, 3, 2, 1],
+            color: '#1dda65',
         },
         {
-            name: 'Joe',
+            name: 'Laptops',
             data: [3, 4, 4, 2, 5],
+            color: '#5cf396',
+        },
+        {
+            name: 'Tablets',
+            data: [3, 4, 4, 2, 5],
+            color: '#c1fad7',
         },
     ],
 }
