@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { darkerGrey, mediumGrey } from '../GlobalStyle/GlobalStyle'
+import { darkerGrey } from '../GlobalStyle/GlobalStyle'
 
 type DivProps = {
     height: number
