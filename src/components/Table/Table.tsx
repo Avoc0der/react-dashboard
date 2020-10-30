@@ -93,7 +93,7 @@ class ReactVirtualizedTable extends React.Component<
 
 const VirtualizedTable = () => {
     return (
-        <Card height={400}>
+        <Card height={400} dark={false}>
             <ReactVirtualizedTable columns={tableColumns} />
         </Card>
     )
