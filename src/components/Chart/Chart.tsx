@@ -1,9 +1,11 @@
 import React from 'react'
-// Components
 // Highcharts
 import Highcharts from 'highcharts'
 import HighchartsReact from 'highcharts-react-official'
+// Components
 import Card from '../Card/Card'
+// ChartData
+import chartData from '../../utils/Data'
 
 const options = {
     chart: {
@@ -49,31 +51,10 @@ const options = {
             borderWidth: 0,
         },
         column: {
-            stacking: 'percent',
+            stacking: 'normal',
         },
     },
-    series: [
-        {
-            name: 'Phones',
-            data: [5, 3, 4, 7, 2],
-            color: '#149947',
-        },
-        {
-            name: 'Services',
-            data: [2, 2, 3, 2, 1],
-            color: '#1dda65',
-        },
-        {
-            name: 'Laptops',
-            data: [3, 4, 4, 2, 5],
-            color: '#5cf396',
-        },
-        {
-            name: 'Tablets',
-            data: [3, 4, 4, 2, 5],
-            color: '#c1fad7',
-        },
-    ],
+    series: chartData,
 }
 
 const Chart = (): JSX.Element => {
