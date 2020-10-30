@@ -3,10 +3,11 @@ import React from 'react'
 // Components
 import Brand from '../Brand/Brand'
 import Chart from '../Chart/Chart'
+import VirtualizedTable from '../Table/Table'
+
 // Styled
 import GlobalStyle from '../GlobalStyle/GlobalStyle'
 import Container from '../Container/Container'
-import Card from '../Card/Card'
 
 const Dashboard = (): JSX.Element => {
     return (
@@ -15,7 +16,7 @@ const Dashboard = (): JSX.Element => {
             <Container>
                 <Brand />
                 <Chart />
-                <Card height={400}>Table goes here</Card>
+                <VirtualizedTable />
             </Container>
         </>
     )
